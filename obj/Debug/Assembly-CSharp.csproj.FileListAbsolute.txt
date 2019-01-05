@@ -1,0 +1,1 @@
+D:\Stack\BlockStacker\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache

@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DD737ACA-79B4-D9E4-8092-9A46298973B3}</ProjectGuid>
+    <ProjectGuid>{48353AE7-7841-9419-A4A2-8571B613DC10}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -48,7 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Script\TheStack.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>D:/Stack/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>D:/Stack/BlockStacker/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
