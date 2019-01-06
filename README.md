@@ -1,2 +1,2 @@
 # BlockStacker
-Replica of Stack game, using unity
+Replica of Stack game, using unity, android
