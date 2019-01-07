@@ -20,7 +20,7 @@ public class TheStack : MonoBehaviour {
 	private int stackIndex;
 	private int scoreCount = 0;
 	private int combo = 0;
-
+	//Array of stack
 	private Vector2 stackBounds = new Vector2 (BOUNDS_SIZE, BOUNDS_SIZE);
 
 	private Vector3 lastTilePos;
@@ -57,7 +57,7 @@ public class TheStack : MonoBehaviour {
 		if (gameOver) {
 			return;
 		}
-
+		//Movement 
 		tileTransistion += Time.deltaTime * tileSpeed;
 		if (isMovingOnX) {
 			theStack [stackIndex].transform.localPosition = new Vector3 (Mathf.Sin (tileTransistion) * BOUNDS_SIZE, scoreCount, secondaryPosition);
@@ -73,6 +73,7 @@ public class TheStack : MonoBehaviour {
 		if (stackIndex < 0)
 			stackIndex = transform.childCount - 1;
 		desiredPosition = (Vector3.down) * scoreCount;
+		//Set stack to current position 
 		theStack [stackIndex].transform.localPosition = new Vector3 (0, scoreCount, 0);
 		//Set size to current scale 
 		theStack[stackIndex].transform.localScale = new Vector3(stackBounds.x, 1, stackBounds.y);
@@ -105,7 +106,7 @@ public class TheStack : MonoBehaviour {
 					stackBounds.x += STACK_BOUNDS_GAIN;
 					float middle = lastTilePos.x + t.localPosition.x / 2; 
 					t.localScale = new Vector3 (stackBounds.x, 1, stackBounds.y);
-					createRubble ();
+					//createRubble ();
 					t.localPosition = new Vector3 (middle - (lastTilePos.x / 2), scoreCount, lastTilePos.z);
 				}
 				combo++;
