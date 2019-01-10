@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TheStack : MonoBehaviour {
 	public Text scoreText;
+	public GameObject endPanel;
 
 	public Color32[] gameColors = new Color32[4];
 	public Material Stackmat;
@@ -210,7 +212,12 @@ public class TheStack : MonoBehaviour {
 	private void endGame(){
 		gameOver = true;
 		//Makes stack fall 
+		endPanel.SetActive(true);
 		theStack [stackIndex].AddComponent<Rigidbody> ();
+	}
+
+	public void onButtonClick(string sceneName){
+		SceneManager.LoadScene (sceneName);
 	}
 	
 
