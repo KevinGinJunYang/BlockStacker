@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TheStack : MonoBehaviour {
+	public Text scoreText;
 
 	public Color32[] gameColors = new Color32[4];
 	public Material Stackmat;
@@ -46,6 +48,7 @@ public class TheStack : MonoBehaviour {
 			if(placeTile()){
 				spawnTile ();
 				scoreCount++;
+				scoreText.text = scoreCount.ToString ();
 			} else{
 				endGame();
 			}
