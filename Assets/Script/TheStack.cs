@@ -46,6 +46,10 @@ public class TheStack : MonoBehaviour {
 	
 	// Update is called once per frame
 	private void Update () {
+		if (gameOver) {
+			return;
+		}
+
 		if (Input.GetMouseButtonDown (0)) {
 			if(placeTile()){
 				spawnTile ();
@@ -63,9 +67,6 @@ public class TheStack : MonoBehaviour {
 	}
 
 	private void moveTile(){
-		if (gameOver) {
-			return;
-		}
 		//Movement 
 		tileTransistion += Time.deltaTime * tileSpeed;
 		if (isMovingOnX) {
@@ -210,6 +211,9 @@ public class TheStack : MonoBehaviour {
 		
 	}
 	private void endGame(){
+		if (PlayerPrefs.GetInt ("score") < scoreCount) {
+			PlayerPrefs.SetInt ("score", scoreCount);
+		}
 		gameOver = true;
 		//Makes stack fall 
 		endPanel.SetActive(true);
