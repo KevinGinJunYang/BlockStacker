@@ -1,22 +1,21 @@
 # BlockStacker
-## Replica of Stack game using unity.
-<br>
-<br>Current build is working for android. 
+Replica of Stack game using unity.
+## Current build is working for android. 
 <br>To play download apk file on phone and install. 
 <br>
-<br>**Loading Screen**
+**Loading Screen**
 ![GamePlay](https://github.com/KevinGinJunYang/BlockStacker/blob/master/GameplayImages/image1.PNG)
 <br>
 <br>
-<br>**Gameplay**
+**Gameplay**
 ![GamePlay](https://github.com/KevinGinJunYang/BlockStacker/blob/master/GameplayImages/image2.PNG)
 <br>
 <br>
-<br>**Gameplay**
+**Gameplay**
 ![GamePlay](https://github.com/KevinGinJunYang/BlockStacker/blob/master/GameplayImages/image3.PNG)
 <br>
 <br>
-<br>**Ending Screen**
+**Ending Screen**
 ![GamePlay](https://github.com/KevinGinJunYang/BlockStacker/blob/master/GameplayImages/image4.PNG)
 
 
