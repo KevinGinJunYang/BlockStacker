@@ -10,7 +10,7 @@ public class TheStack : MonoBehaviour {
 	public Color32[] gameColors = new Color32[4];
 	public Material Stackmat;
 
-	private const float BOUNDS_SIZE = 3.5f;
+	private const float BOUNDS_SIZE = 2.5f;
 	private const float STACK_MOVING_SPEED = 5.0f;
 	private const float ERROR_MARGIN = 0.1f;
 	private const float STACK_BOUNDS_GAIN = 0.25f;
