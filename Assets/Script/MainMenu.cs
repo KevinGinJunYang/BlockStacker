@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour {
 	public Text scoreText;
 
 	private void Start () {
-		scoreText.text = PlayerPrefs.GetInt ("score").ToString ();
+		scoreText.text = "BEST: " + PlayerPrefs.GetInt ("score").ToString ();
 	}
 
 	public void playGame(){

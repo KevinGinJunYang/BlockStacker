@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class TheStack : MonoBehaviour {
 	public Text scoreText;
 	public GameObject endPanel;
-
 	public Color32[] gameColors = new Color32[4];
 	public Material Stackmat;
 
@@ -29,7 +28,6 @@ public class TheStack : MonoBehaviour {
 	private int combo = 0;
 	//Array of stack
 	private Vector2 stackBounds = new Vector2 (BOUNDS_SIZE, BOUNDS_SIZE);
-
 	private Vector3 lastTilePos;
 	private Vector3 desiredPosition;
 	// Use this for initialization
@@ -39,9 +37,7 @@ public class TheStack : MonoBehaviour {
 			theStack [i] = transform.GetChild (i).gameObject;
 			colorMesh(theStack[i].GetComponent<MeshFilter>().mesh);
 		}
-
 		stackIndex = transform.childCount - 1;
-			
 	}
 	
 	// Update is called once per frame
@@ -223,7 +219,5 @@ public class TheStack : MonoBehaviour {
 	public void onButtonClick(string sceneName){
 		SceneManager.LoadScene (sceneName);
 	}
-	
-
-					
+				
 }
